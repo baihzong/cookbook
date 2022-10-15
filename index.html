@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+  <script src='startMove.js'></script>
+  <title>Document</title>
+  <script>
+    function $(id) {
+      return document.getElementById(id);
+    }
+    window.onload = function () {
+      MenuTAB();
+      magnify();
+    }
+
+    function magnify() {
+      var magnify = $("page1");
+      var oDiv1 = magnify.getElementsByTagName("img");
+
+      for (var i = 0; i < oDiv1.length; i++) {
+        oDiv1[i].onmouseover = function () {
+          startMove(this, { width: 350, height: 350, marginLeft: -50, marginTop: -50 });
+        }
+        oDiv1[i].onmouseout = function () {
+          startMove(this, { width: 230, height: 230, marginLeft: 0, marginTop: 0 });
+        }
+      }
+
+    }
+    function MenuTAB() {
+      var oNav = $("header_nav");
+      var oDiv1 = $("div1");
+      var oLis = oNav.getElementsByTagName("a");
+      var aDivs = oDiv1.getElementsByClassName("page");
+      //给每一个按钮添加点击
+      for (var i = 0; i < oLis.length; i++) {
+        oLis[i].index = i;
+        oLis[i].onclick = function () {
+          //取消所有按钮的样式
+          for (var j = 0; j < oLis.length; j++) {
+            oLis[j].className = 'nav-link';
+            aDivs[j].style.display = 'none';
+          }
+
+          aDivs[this.index].style.display = 'block';
+          this.className = 'nav-link active';
+        }
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white fs-4">菜谱首页</a></li>
+          <li><a href="#" class="nav-link px-2 text-white fs-4">分类</a></li>
+          <li><a href="#" class="nav-link px-2 text-white fs-4">菜单</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark" placeholder="家常豆腐" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-warning">登入</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light " aria-label="Third navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">类别</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0" id="header_nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">最新推荐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">家常菜</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">八大菜系</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">小吃</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">甜点</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="div1">
+      <div class="page" id="page1">
+        <div class="container">
+          <p></p>
+          <div class="row">
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-6 p-3 col-md-3 text-white">
+              <div class="magnify">
+                <a href="page1.html" class="image">
+                  <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="page1.html"><p>青椒炒鸡蛋</p></a>
+                  <a href="page2.html"><p>Github</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">2</div>
+      <div class="page">3</div>
+      <div class="page">4</div>
+      <div class="page">5</div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+  <title>Document</title>
+  <style>
+    .img img{ width: 100% }
+    .ingredient{ color: #333333; }
+    .mainIngredients{ height:100px; border: 1px solid rgb(168, 168, 168); border-radius: 20px; position: relative; margin-top: 60px; text-align: center; }
+    .mainIngredients h4{ position: absolute; top: -16px; left: 40px; display: inline; background-color: white; padding: 0 10px;}
+    .mainIngredients div{ font-size: 18px }
+    .mainIngredients div span{ font-size: 14px; color: #999999;}
+    .mainIngredients2{ display: flex;  justify-content:space-evenly; align-items: center; width: 100%; height: 100%;}
+    .aaaaa{ width: 100%; margin: 0 auto;}
+    .video1 video{ width: 100%; height: 100%;}
+    .qj{ float: right; margin-top: -40px;}
+  </style>
+</head>
+
+<body>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-white fs-4">菜谱首页</a></li>
+          <li><a href="#" class="nav-link px-2 text-white fs-4">分类</a></li>
+          <li><a href="#" class="nav-link px-2 text-white fs-4">菜单</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark" placeholder="家常豆腐" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-warning">登入</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <p></p>
+    <div class="row">
+      <!-- 青椒炒鸡蛋 -->
+      <div class="col-sm-6 p-3 col-md-4 text-white">
+        <div class="img">
+          <img src="https://s1.328888.xyz/2022/10/15/UCMTh.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-sm-6 p-3 col-md-8 text-white">
+        <div class="ingredient">
+          <h3>食材明细</h3>
+          <h3 class="qj">青椒炒鸡蛋</h3>
+          <div class="mainIngredients">
+            <h4>主料</h4>
+            <div class="mainIngredients2">
+              <div>鸡蛋<br><span>4个</span></div>
+              <div>青椒<br><span>适量</span></div>
+              <div>大蒜头<br><span>适量</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ingredient">
+          <div class="mainIngredients">
+            <h4>调料</h4>
+            <div class="mainIngredients2">
+              <div>油<br><span>适量</span></div>
+              <div>盐<br><span>适量</span></div>
+              <div>生抽<br><span>适量</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ingredient">
+          <div class="mainIngredients">
+            <h4>口味</h4>
+            <div class="mainIngredients2">
+              <div>中辣<br><span>口味</span></div>
+              <div>炒<br><span>工艺</span></div>
+              <div>二十分钟<br><span>耗时</span></div>
+              <div>高级<br><span>难度</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="video1">
+      <video controls preload src="./img/青椒炒鸡蛋.mp4"></video>
+    </div>
+    
+  </div>
+
+
+
+</body>
+
+</html>
