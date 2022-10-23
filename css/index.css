@@ -79,3 +79,12 @@ a {
   line-height: 22px;
   color: #333;
 }
+
+
+/* 家常菜 */
+.page2{
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+}
