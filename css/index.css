@@ -6,7 +6,7 @@ a:focus{ outline: none; }
 img{ border: 0; display: block;}
 ul, ol{ list-style: none; }
 h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal; }
-.clear::after{ content: ""; display: block; clear: both; }
+
 
 
 
