@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/index.css">
   <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/header.css">
 
   <script src='startMove.js'></script>
   <title>首页</title>
@@ -55,14 +56,74 @@
         }
       }
     }
-
-
   </script>
 </head>
 
 <body>
 
-  <header class="p-3 bg-dark text-white">
+  <header id="header">
+    <div class="left">
+      <ul class="bar-left left">
+        <li class="a1">
+          <a title="美食天下" href="#" target="_blank" class="top_bar_logo a2">
+
+
+          </a>
+          <span href="#">首页</span>
+
+        </li>
+        <li><a title="菜谱" href="#" target="_blank">菜谱</a></li>
+        <li><a title="食材" href="#" target="_blank">食材</a></li>
+        <li><a title="健康" href="#" target="_blank">健康</a></li>
+        <li><a title="专题" href="#" target="_blank">专题</a></li>
+        <li><a title="笔记" href="#" target="_blank">笔记</a></li>
+        <li><a title="社区" href="#" target="_blank">社区</a></li>
+        <li><a title="活动" href="#" target="_blank">活动</a></li>
+        <li><a title="搜索" href="#" target="_blank">搜索</a></li>
+        <li class="top_bar_more">
+          <div>
+            <div></div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="right">
+      <ul>
+        <li class="enter">
+          <a href="./src/resign.html">
+            <button>登入/注册</button>
+          </a>
+        </li>
+        <li>
+          <button class="btn1">
+            <img src="./img/发布图标.png" alt="">
+            <p>发布</p>
+          </button>
+        </li>
+        <li>
+          <button class="btn2">
+            <img src="./img/签到有礼图标.png" alt="">
+            <p>签到有礼</p>
+          </button>
+        </li>
+        <li>
+          <button class="btn3">
+            <img src="./img/客户端图标.png" alt="">
+            <p>客户端</p>
+          </button>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </header>
+
+
+
+  <!-- <header class="p-3 bg-dark text-white">
     <div class="container-fluid">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -75,30 +136,39 @@
           <li><a href="#" class="nav-link px-2 text-white fs-4">分类</a></li>
           <li><a href="#" class="nav-link px-2 text-white fs-4">菜单</a></li>
         </ul>
-    
+
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input type="search" class="form-control form-control-dark" placeholder="家常豆腐" aria-label="Search">
         </form>
 
         <div class="text-end">
           <a href="./src/resign.html">
-            <button type="button" class="btn btn-warning">登入</button>
-          </a> 
-          
+            <button type="button" class="btn btn-light">登入/注册</button>
+          </a>
+
+
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
+
+
+
+
+
+
+
 
   <div class="container">
     <nav class="navbar navbar-expand-sm navbar-light " aria-label="Third navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">类别</a>
+        <a class="navbar-brand logo_1" href="#"></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <div class="navbar-collapse collapse" id="navbarsExample03" style="">
           <ul class="navbar-nav me-auto mb-2 mb-sm-0" id="header_nav">
@@ -118,6 +188,10 @@
               <a class="nav-link" href="#">甜点</a>
             </li>
           </ul>
+
+          <form role="search">
+            <input class="form-control" type="search" placeholder="请输入菜名" aria-label="Search">
+          </form>
         </div>
       </div>
     </nav>
@@ -133,8 +207,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -146,8 +224,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -159,8 +241,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -172,8 +258,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -185,21 +275,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
-                </div>
-              </div>
-            </div>
-            
-            <!-- 青椒炒鸡蛋 -->
-            <div class="col-sm-12 p-3 col-md-6 col-lg-3 text-white">
-              <div class="magnify">
-                <a href="./src/page1.html" class="image">
-                  <img src="./img/a1.jpg" alt="">
-                </a>
-                <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -211,8 +292,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -224,8 +309,29 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 青椒炒鸡蛋 -->
+            <div class="col-sm-12 p-3 col-md-6 col-lg-3 text-white">
+              <div class="magnify">
+                <a href="./src/page1.html" class="image">
+                  <img src="./img/a1.jpg" alt="">
+                </a>
+                <div class="div1">
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -239,8 +345,12 @@
                   <img src="./img/a1.jpg" alt="">
                 </a>
                 <div class="div1">
-                  <a href="./src/page1.html"><p>青椒炒鸡蛋</p></a>
-                  <a href="https://github.com/baihzong/cookbook.git"><p>不会毒鸡汤</p></a>
+                  <a href="./src/page1.html">
+                    <p>青椒炒鸡蛋</p>
+                  </a>
+                  <a href="https://github.com/baihzong/cookbook.git">
+                    <p>不会毒鸡汤</p>
+                  </a>
                 </div>
               </div>
             </div>
