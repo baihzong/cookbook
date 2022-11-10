@@ -65,21 +65,39 @@
   background: url(../img/顶部导航logo.png) 0 -14px;
 }
 
-.top_bar_more div {
-  height: 100%;
-  width: 40px;
-  margin: 17px auto;
-}
-
-.top_bar_more div div {
-
-  width: 0;
-  height: 0;
+#header #top_bar_more::after {
   border-top: 6px solid #cccccc;
-  border-right: 6px solid transparent;
   border-left: 6px solid transparent;
-
+  border-right: 6px solid transparent;
+  content: "";
+  position: relative;
+  top: 14px;
+  margin-left: 14px;
 }
+#top_bar_more:hover #a4{
+  display: block;
+}
+
+#a4 {
+  display: flex;
+  flex-direction: column !important;
+  color: #cccccc;
+  position: absolute;
+  top: 40px;
+  left: 430px;
+  background-color: #333333;
+  z-index: 1;
+  display: none;
+}
+
+#a4 div{
+  padding: 0 10px;
+  margin: 0 auto;
+}
+#a4 div:hover{
+  background-color: black;
+}
+
 
 /* 右边 */
 
@@ -144,9 +162,10 @@
   flex-direction: row;
 }
 
-#header_nav .active{
+#header_nav .active {
   color: #FE5761;
-} 
-#header_nav a:hover{
+}
+
+#header_nav a:hover {
   color: #FE5761;
-} 
+}
